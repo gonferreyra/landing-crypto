@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------ NAVBAR ----- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #333; */
+    background-color: white;
+    /* color: white; */
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.brand-title img {
+    height: 60px;
+}
+
+.navbar-links ul {
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    /* color: white; */
+    color: black;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 1.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 400px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        color: white;
+    }
+
+    .navbar-links a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+        background-color: #333;
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .brand-title img {
+        height: 80px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .brand-title img {
+        height: 90px;
+    }
+}
+
+/* ----- Section 1 ----- */
+
+.section-1 {
+    height: 350px;
+    width: 100%;
+    background-image: url("../img/Crypto-Terms.jpg");
+    /* opacity: 0.9; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-1-content {
+    width: 85%;
+    margin: auto;
+    position: relative;
+    top: 20%;
+}
+
+.section-1-content h1,
+h5 {
+    color: rgb(250, 250, 250);
+}
+
+@media screen and (min-width: 768px) {
+    .section-1 {
+        height: 500px;
+    }
+
+    .section-1-content h1 {
+        font-size: 45px;
+    }
+
+    .section-1-content h5 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .section-1-content {
+        text-align: center;
+    }
+
+    .section-1-content h1 {
+        font-size: 55px;
+    }
+
+    .section-1-content h5 {
+        font-size: 35px;
+    }
+}
+
+/* ---- ------- */
+
+.section-2 {
+    background-image: url("../img/background2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    width: 100%;
+}
+
+.section-2-content {
+    width: 85%;
+    margin: auto;
+    position: relative;
+    top: 20%;
+}
+
+.section-2-content h2,
+p,
+button {
+    text-align: justify;
+}
+
+.section-2-content h2 {
+    line-height: 40px;
+}
+
+.section-2-content p {
+    margin: 20px 0;
+    font-size: 10px;
+}
+
+.section-2-content button {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    background-color: white;
+    margin: 20px 0;
+}
+
+.section-2-content button a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+
+.buttons {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .section-2 {
+        height: 500px;
+    }
+
+    .section-2-content h2 {
+        font-size: 30px;
+    }
+
+    .section-2-content p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .section-2-content h2,
+    p,
+    button {
+        text-align: center;
+    }
+
+    .section-2-content h2 {
+        font-size: 40px;
+    }
+
+    .section-2-content p {
+        font-size: 25px;
+    }
+}
+
+/* ----- ------- */
+
+.section-3 {
+    background-color: #f7f7f7;
+    height: 750px;
+    color: black;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.container {
+    /* margin: 20px 0 0; */
+}
+
+.icon-container {
+    width: 100%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.icon {
+    background-color: orange;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.icon img {
+    margin-top: 15px;
+}
+
+.icon p {
+    /* line-height: 0; */
+    margin-left: -6px;
+}
