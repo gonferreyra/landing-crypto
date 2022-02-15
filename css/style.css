@@ -2,7 +2,10 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
     color: white;
+    background-color: #f7f7f7;
+    height: 100vh;
 }
 
 * {
@@ -23,7 +26,7 @@ body {
 
 .brand-title {
     font-size: 1.5rem;
-    margin: .5rem;
+    /* margin: .5rem; */
 }
 
 .brand-title img {
@@ -42,7 +45,7 @@ body {
     text-decoration: none;
     /* color: white; */
     color: black;
-    padding: 1rem;
+    padding: 1.5rem;
     display: block;
 }
 
@@ -52,7 +55,7 @@ body {
 
 .toggle-button {
     position: absolute;
-    top: 1.75rem;
+    top: 1.5rem;
     right: 1rem;
     display: none;
     flex-direction: column;
@@ -68,7 +71,7 @@ body {
     border-radius: 10px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 460px) {
     .toggle-button {
         display: flex;
     }
@@ -107,22 +110,22 @@ body {
     }
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
     .brand-title img {
         height: 80px;
     }
-}
+} */
 
 @media screen and (min-width: 1024px) {
-    .brand-title img {
+    /* .brand-title img {
         height: 90px;
-    }
+    } */
 }
 
 /* ----- Section 1 ----- */
 
 .section-1 {
-    height: 350px;
+    padding: 13rem 2rem;
     width: 100%;
     background-image: url("../img/Crypto-Terms.jpg");
     /* opacity: 0.9; */
@@ -170,14 +173,14 @@ h5 {
     }
 }
 
-/* ---- ------- */
+/* ---- section 2 ------- */
 
 .section-2 {
     background-image: url("../img/background2.jpg");
     background-size: cover;
     background-position: center;
-    height: 350px;
     width: 100%;
+    padding: 8rem 1rem;
 }
 
 .section-2-content {
@@ -208,14 +211,16 @@ button {
     border-radius: 5px;
     text-align: center;
     border: none;
-    background-color: white;
-    margin: 20px 0;
+    background-color: orange;
+    margin: 20px 5px;
 }
 
 .section-2-content button a {
     text-decoration: none;
-    color: black;
+    color: white;
+    text-align: center;
     font-size: 12px;
+
 }
 
 .buttons {
@@ -229,10 +234,12 @@ button {
 
     .section-2-content h2 {
         font-size: 30px;
+        text-align: center;
     }
 
     .section-2-content p {
         font-size: 15px;
+        text-align: center;
     }
 }
 
@@ -248,24 +255,24 @@ button {
         font-size: 40px;
     }
 
-    .section-2-content p {
-        font-size: 25px;
-    }
+    /* .section-2-content p {
+        font-size: 20px;
+    } */
 }
 
-/* ----- ------- */
+/* ----- section 3 ------- */
 
 .section-3 {
     background-color: #f7f7f7;
-    height: 750px;
+    /* max-height: 1200px; */
     color: black;
     text-align: center;
-    padding-top: 25px;
+    padding: 2.5rem 2rem
 }
 
-.container {
-    /* margin: 20px 0 0; */
-}
+/* .container {
+    margin: 20px 0 0;
+} */
 
 .icon-container {
     width: 100%;
@@ -288,7 +295,177 @@ button {
     margin-top: 15px;
 }
 
+.icon-container p {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
 .icon p {
     /* line-height: 0; */
     margin-left: -6px;
+}
+
+.icon:hover {
+    /* box-shadow: 0 0 6px rgb(35 173 255); */
+    box-shadow: 0 0 6px black;
+}
+
+@media screen and (min-width: 768px) {
+    .section-3 .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "security coin buying"
+            "mobile-app coin wallet"
+            "insurance coin exchange";
+    }
+
+    .security {
+        grid-area: security;
+    }
+
+    .mobile-app {
+        grid-area: mobile-app;
+    }
+
+    .insurance {
+        grid-area: insurance;
+    }
+
+    .buying {
+        grid-area: buying;
+    }
+
+    .wallet {
+        grid-area: wallet;
+    }
+
+    .exchange {
+        grid-area: exchange;
+    }
+
+    .coin {
+        align-self: center;
+        grid-area: coin;
+    }
+}
+
+/* ----- Section-4 Contact-form ----- */
+
+.section-4 {
+    padding: 1rem 1rem;
+    margin: 2rem 2rem;
+    /* background-color: #93b0d0; */
+    background: #27282d;
+}
+
+.contact-heading {
+    padding: 0 15px;
+}
+
+.form-container {
+    border-radius: 10px;
+}
+
+.form-box {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.form-box input {
+    width: 100%;
+    line-height: 24px;
+    padding: 8px 15px;
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+}
+
+.form-box-2 {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.form-box-2 textarea {
+    width: 100%;
+    line-height: 24px;
+    padding: 8px 15px;
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+}
+
+.submit {
+    padding: 0 15px;
+    text-align: center;
+}
+
+.submit button {
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: orange;
+    border: none;
+    color: white;
+}
+
+@media screen and (min-width: 590px) {
+    .form-box {
+        float: left;
+        width: 50%;
+    }
+}
+
+/* https://colorpalettes.net/color-palette-4320/ */
+
+/* ------ Section 5 --------- */
+
+.section-5 {
+    padding: 50px 15px;
+    color: black;
+}
+
+.cards {
+    padding: 39px 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 290px;
+}
+
+.price-heading {
+    margin-bottom: 50px;
+}
+
+.price-heading h2 {
+    text-align: center;
+}
+
+.data ul {
+    list-style: none;
+}
+
+.data ul li {
+    line-height: 40px;
+}
+
+.data ul li:before {
+    content: '✓';
+    padding: 0 10px;
+}
+
+.data ul {
+    padding-top: 39px;
+}
+
+.data ul li {
+    text-align: justify;
+    padding: 0 30px;
+}
+
+.price-header {
+    padding: 0px 70px 39px 70px;
+    border-bottom: 1px solid rgb(190, 190, 190);
 }
