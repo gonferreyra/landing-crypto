@@ -21,9 +21,9 @@
         <div class="navbar-links">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Log In</a></li>
-                <li><a href="#">Register</a></li>
+                <li><a href="#price">Price</a></li>
+                <li><a href="#log-in">Log In</a></li>
+                <li><a href="#register">Register</a></li>
             </ul>
         </div>
     </nav>
@@ -33,74 +33,125 @@
             <h5>DEFI - THE FUTURE IS COMING</h5>
         </div>
     </section>
-    <section class="section-5">
+    <section id="price" class="section-5">
         <div class="price-container">
             <div class="price-heading">
-                <h2>These are our pricing plans</h2>
+                <h2>THESE ARE OUR PRICING PLANS</h2>
             </div>
-            <div class="cards">
-                <div class="card">
-                    <div class="price-header">
-                        <h3>PREMIUM</h3>
-                        <div class="price-cost">
-                            <p>$299<span>/month</span></p>
+            <div class="cards-container">
+                <div class="cards">
+                    <div class="card">
+                        <div class="price-header">
+                            <h3>BASIC</h3>
+                            <div class="price-cost">
+                                <p>$99<span>/month</span></p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="price-content">
-                        <div class="data">
-                            <ul>
-                                <li>Mobile App</li>
-                                <li>Desktop Software</li>
-                                <li>Free Consulting</li>
-                                <li>1 Account</li>
-                                <li>Data Security</li>
-                                <li>Analysis Service</li>
-                                <li>Support 24/7</li>
-                            </ul>
+                        <div class="price-content">
+                            <div class="data">
+                                <ul class="free">
+                                    <li>Mobile App</li>
+                                    <li>Desktop Software</li>
+                                    <li>1 Account</li>
+                                    <div class="premium">
+                                        <ul>
+                                            <li>Free Consulting</li>
+                                            <li>Data Security</li>
+                                            <li>Analysis Service</li>
+                                            <li>Support 24/7</li>
+                                        </ul>
+                                    </div>
+
+                                </ul>
+                            </div>
+                            <a href="#">SELECT PLAN</a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="cards">
-                <div class="card">
-                    <div class="price-header">
-                        <h3>PREMIUM</h3>
-                        <div class="price-cost">
-                            <p>$299<span>/month</span></p>
+                <div class="cards">
+                    <div class="card">
+                        <div class="price-header">
+                            <h3>STANDARD</h3>
+                            <div class="price-cost">
+                                <p>$199<span>/month</span></p>
+                            </div>
+                        </div>
+                        <div class="price-content">
+                            <div class="data">
+                                <ul>
+                                    <li>Mobile App</li>
+                                    <li>Desktop Software</li>
+                                    <li>1 Account</li>
+                                    <li>Free Consulting</li>
+                                    <li>Data Security</li>
+                                    <div class="premium">
+                                        <ul>
+                                            <li>Analysis Service</li>
+                                            <li>Support 24/7</li>
+                                        </ul>
+                                    </div>
+
+                                </ul>
+                            </div>
+                            <a href="#">SELECT PLAN</a>
                         </div>
                     </div>
-                    <div class="price-content">
-                        <div class="data">
-                            <ul>
-                                <li>Mobile App</li>
-                                <li>Desktop Software</li>
-                                <li>Free Consulting</li>
-                                <li>1 Account</li>
-                                <li>Data Security</li>
-                                <li>Analysis Service</li>
-                                <li>Support 24/7</li>
-                            </ul>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="price-header">
+                            <h3>PREMIUM</h3>
+                            <div class="price-cost">
+                                <p>$299<span>/month</span></p>
+                            </div>
+                        </div>
+                        <div class="price-content">
+                            <div class="data">
+                                <ul>
+                                    <li>Mobile App</li>
+                                    <li>Desktop Software</li>
+                                    <li>Free Consulting</li>
+                                    <li>1 Account</li>
+                                    <li>Data Security</li>
+                                    <li>Analysis Service</li>
+                                    <li>Support 24/7</li>
+                                </ul>
+                            </div>
+                            <a href="#">SELECT PLAN</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section-2">
+    <section id="log-in" class="section-2">
         <div class="section-2-content">
-            <h2>THE TIME TO INVEST IS NOW!</h2>
-            <p>Every day Bitcoin is making headlines. People call it the new GOLD</p>
-            <div class="buttons">
-                <button><a href="#">GET STARTED</a></button>
-                <button><a href="#">CONTACT US</a></button>
+            <h2>START TODAY</h2>
+            <p>Create a new account and start trading. Already registered? Log in to your account</p>
+            <div class="form">
+                <form action="page_submission_URL" method="POST" class="contact-form">
+                    <div class="test-flex">
+                        <div class="form-box">
+                            <!-- <label for="user">User</label> -->
+                            <input type="text" name="user" placeholder="User name" required />
+                        </div>
+                        <div class="form-box">
+                            <!-- <label for="password">password</label> -->
+                            <input type="password" name="password" placeholder="Password" required />
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button type="submit"><a>LOG IN</a></button>
+                        <button><a href="#register">REGISTER</a></button>
+                    </div>
+                </form>
             </div>
-
         </div>
     </section>
     <section class="section-3">
         <h2>WHY CHOOSE BITCOIN</h2>
         <div class="container">
-            <div class="icon-container">
+            <div class="icon-container security-container">
                 <div class="icon security">
                     <img src="./img/security.png" alt="">
                 </div>
@@ -108,7 +159,7 @@
                     <p>Security</p>
                 </div>
             </div>
-            <div class="icon-container">
+            <div class="icon-container mobile-container">
                 <div class="icon mobile-app">
                     <img src="./img/mobile-app.png" alt="">
                 </div>
@@ -116,7 +167,7 @@
                     <p>Mobile App</p>
                 </div>
             </div>
-            <div class="icon-container">
+            <div class="icon-container insurance-container">
                 <div class="icon insurance">
                     <img src="./img/insurance.png" alt="">
                 </div>
@@ -135,7 +186,7 @@
                     <p>Recurring Buying</p>
                 </div>
             </div>
-            <div class="icon-container">
+            <div class="icon-container wallet-container">
                 <div class="icon wallet">
                     <img src="./img/wallet.png" alt="">
                 </div>
@@ -144,7 +195,7 @@
                 </div>
             </div>
             <div class="icon-container">
-                <div class="icon exchange">
+                <div class="icon exchange exchange-container">
                     <img src="./img/exchange.png" alt="">
                 </div>
                 <div>
@@ -153,33 +204,34 @@
             </div>
         </div>
     </section>
-    <section class="section-4">
-        <div class="contact-heading">
-            <h3>CONTACT US</h3>
-            <p>We will help you resolve your issues.</p>
+    <section id="register" class="section-4">
+        <div class="sec-4-cont">
+            <div class="sec-4-header">
+                <h2>Create a new acount</h2>
+                <p>Register with your email</p>
+            </div>
+            <div class="form-container">
+                <form action="" class="register-form">
+                    <div class="reg-data-cont">
+                        <div class="reg-email">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="reg-password">
+                            <label for="pasword">Password</label>
+                            <input type="password" id="password" required>
+                        </div>
+                    </div>
+                    <div class="reg-checkbox">
+                        <input type="checkbox" required>
+                        <label for="">I have read and i accept the Terms and Conditions of NucbaCrypto.</label>
+                    </div>
+                    <div class="reg-button">
+                        <button type="submit"><a>REGISTER</a></button>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="form">
-            <form action="" class="contact-form">
-                <div class="test-flex">
-                    <div class="form-box">
-                        <input type="text" name="name" s placeholder="Your Name" required>
-                    </div>
-                    <div class="form-box">
-                        <input type="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-box">
-                        <input type="email" name="email" placeholder="Your Email" required>
-                    </div>
-                </div>
-                <div class="form-box-2">
-                    <textarea name="message" placeholder="Your Message" required></textarea>
-                </div>
-                <div class="submit">
-                    <button type="submit">Submit</button>
-                </div>
-            </form>
-        </div>
-
     </section>
     <footer></footer>
 
