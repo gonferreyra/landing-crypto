@@ -24,18 +24,14 @@ body {
     /* color: white; */
 }
 
-.brand-title {
-    font-size: 1.5rem;
-    /* margin: .5rem; */
-}
-
 .brand-title img {
     height: 60px;
 }
 
 .brand-title img:hover {
-    transform: rotate(5deg);
-    transition: 1s;
+    /* transform: rotate(360deg); */
+    height: 80px;
+    transition: 2s;
 }
 
 .navbar-links ul {
@@ -44,6 +40,7 @@ body {
 
 .navbar-links li {
     list-style: none;
+    /* background-color: blue; */
 }
 
 .navbar-links li a {
@@ -167,7 +164,8 @@ h5 {
 
 @media screen and (min-width: 1024px) {
     .section-1-content {
-        text-align: center;
+        margin-top: 5rem;
+        /* text-align: center; */
     }
 
     .section-1-content h1 {
@@ -176,6 +174,8 @@ h5 {
 
     .section-1-content h5 {
         font-size: 35px;
+        /* margin-top: 5rem; */
+        /* text-align: center; */
     }
 }
 
@@ -277,9 +277,6 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-    .section-2 {
-        /* height: 500px; */
-    }
 
     .section-2-content h2 {
         font-size: 30px;
@@ -568,9 +565,11 @@ button {
 /* ------ Section 4 Form ------ */
 
 .section-4 {
-    color: black;
+    /* color: black; */
     padding: 1rem 1.2rem;
-    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    /* background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%); */
+    /* background-color: #264653; */
+    background-color: #bc6c25;
 
 
 }
@@ -610,8 +609,6 @@ input {
     border-radius: 5px;
     text-align: center;
     border: none;
-    /* background-color: orange; */
-    background-image: linear-gradient(120deg, #fda085 0%, #f6d365 100%)
 }
 
 .reg-button a {
@@ -631,6 +628,9 @@ input {
 .sec-4-cont {
     border-radius: 5px;
     padding: 5px;
+    /* border: 1px solid orange; */
+    /* border-radius: 10px; */
+    /* background-color: orange; */
 }
 
 @media screen and (min-width: 650px) {
