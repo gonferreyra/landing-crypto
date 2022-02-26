@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -19,9 +23,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: #333; */
     background-color: white;
-    /* color: white; */
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }
 
 .brand-title img {
@@ -29,7 +35,6 @@ body {
 }
 
 .brand-title img:hover {
-    /* transform: rotate(360deg); */
     height: 80px;
     transition: 2s;
 }
@@ -40,19 +45,16 @@ body {
 
 .navbar-links li {
     list-style: none;
-    /* background-color: blue; */
 }
 
 .navbar-links li a {
     text-decoration: none;
-    /* color: white; */
     color: black;
     padding: 1.5rem;
     display: block;
 }
 
 .navbar-links li a:hover {
-    /* background-color: #555; */
     color: orange;
 }
 
@@ -113,35 +115,23 @@ body {
     }
 }
 
-/* @media screen and (min-width: 768px) {
-    .brand-title img {
-        height: 80px;
-    }
-} */
-
-@media screen and (min-width: 1024px) {
-    /* .brand-title img {
-        height: 90px;
-    } */
-}
-
 /* ----- Section 1 ----- */
 
 .section-1 {
     padding: 10rem 3rem;
     width: 100%;
     background-image: url("../img/tYzGkE.jpg");
-    /* opacity: 0.9; */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    height: 100vh;
 }
 
 .section-1-content {
     width: 85%;
     margin: auto;
     position: relative;
-    top: 20%;
+    top: 40%;
 }
 
 .section-1-content h1,
@@ -150,11 +140,6 @@ h5 {
 }
 
 @media screen and (min-width: 768px) {
-    .section-1 {
-        height: 500px;
-        /* height: 810px; */
-    }
-
     .section-1-content h1 {
         font-size: 45px;
     }
@@ -165,13 +150,10 @@ h5 {
 }
 
 @media screen and (min-width: 1024px) {
-    .section-1 {
-        height: 810px;
-    }
-
     .section-1-content {
         margin-top: 5rem;
-        /* text-align: center; */
+
+        top: 20%;
     }
 
     .section-1-content h1 {
@@ -180,8 +162,6 @@ h5 {
 
     .section-1-content h5 {
         font-size: 35px;
-        /* margin-top: 5rem; */
-        /* text-align: center; */
     }
 }
 
@@ -263,6 +243,7 @@ button {
     padding-top: 10px;
     background-color: rgb(243, 160, 7);
     border-radius: 10px;
+    border: 1px solid white;
     max-width: 334px;
 }
 
@@ -297,35 +278,20 @@ button {
 }
 
 @media screen and (min-width: 1024px) {
-
-    .section-2-content h2,
-    p,
-    button {
-        /* text-align: center; */
-    }
-
     .section-2-content h2 {
         font-size: 40px;
     }
-
-    /* .section-2-content p {
-        font-size: 20px;
-    } */
 }
 
-/* ----- section 3 ------- */
+/* ----- Section 3 ------- */
 
 .section-3 {
     background-color: #f7f7f7;
-    /* max-height: 1200px; */
+
     color: black;
     text-align: center;
     padding: 2.5rem 2rem
 }
-
-/* .container {
-    margin: 20px 0 0;
-} */
 
 .icon-container {
     width: 100%;
@@ -350,18 +316,15 @@ button {
 
 .icon-container p {
     font-size: 12px;
-    /* margin-top: 5px; */
     text-align: center;
 }
 
 .icon p {
-    /* line-height: 0; */
     margin-left: -6px;
 }
 
 .icon:hover {
-    /* box-shadow: 0 0 6px rgb(35 173 255); */
-    box-shadow: 0 0 6px black;
+    box-shadow: 0 0 10px black;
     transition: 0.5s;
 }
 
@@ -447,8 +410,6 @@ button {
     }
 }
 
-/* https://colorpalettes.net/color-palette-4320/ */
-
 /* ------ Section 5 --------- */
 
 .section-5 {
@@ -523,7 +484,6 @@ button {
 }
 
 .price-header {
-    /* padding: 0px 70px 39px 70px; */
     border-bottom: 1px solid rgba(190, 190, 190, 0.671);
 }
 
@@ -594,6 +554,16 @@ button {
     background-color: #bc6c25;
 }
 
+.form-container {
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.form-container:hover {
+    border: 2px solid black;
+}
+
 .sec-4-header h2,
 p {
     margin: 15px auto;
@@ -651,9 +621,6 @@ input {
 .sec-4-cont {
     border-radius: 5px;
     padding: 5px;
-    /* border: 1px solid orange; */
-    /* border-radius: 10px; */
-    /* background-color: orange; */
 }
 
 @media screen and (min-width: 768px) {
@@ -668,7 +635,6 @@ input {
 footer {
     color: white;
     background-color: black;
-    /* background-color: gray; */
     padding: 1rem 1.2rem;
     ;
 }
@@ -709,13 +675,10 @@ h3 {
 .ftr-newsletter button {
     width: 101px;
     height: 37px;
-    /* margin: 10px auto; */
     border-radius: 5px;
     border: none;
     text-align: center;
-    /* border: 1px solid orange; */
     background-color: orange;
-    /* margin-right: auto; */
 }
 
 .ftr-newsletter button a {
@@ -736,8 +699,6 @@ h3 {
     color: orange;
     transition: 0.5s;
 }
-
-
 
 .ftr-2 {
     margin-bottom: 1rem;
@@ -767,6 +728,15 @@ h3 {
 
 .ftr-bottom p {
     text-align: center;
+}
+
+.ftr-bottom a {
+    text-decoration: none;
+    color: orange;
+}
+
+.ftr-bottom a:hover {
+    color: white;
 }
 
 @media screen and (min-width: 768px) {
