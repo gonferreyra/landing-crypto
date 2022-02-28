@@ -1,9 +1,19 @@
 const toggleButton = document.getElementsByClassName("toggle-button")[0];
-// Como va a retornar un array de 3 elementos, le ponemos la posicion 0 para que retorne el primero
-
 const navBarLinks = document.getElementsByClassName("navbar-links")[0];
+// // Como va a retornar un array de 3 elementos, le ponemos la posicion 0 para que retorne el primero
 
-toggleButton.addEventListener("click", () => {
-  navBarLinks.classList.toggle("active");
-});
+// toggleButton.addEventListener("click", () => {
+//   navBarLinks.classList.toggle("active");
+// });
 // Si la clase 'active' no esta, la agrega y si esta la quita
+
+// const y = document.getElementsByClassName("navbar-links");
+// const z = document.getElementsByClassName("menu-a");
+// z.addEventListener("click", () => {
+//   y.classList.toggle("active");
+// });
+
+function showHide() {
+  let navLinks = document.getElementsByClassName("navbar-links");
+  navBarLinks.classList.toggle("active");
+}
