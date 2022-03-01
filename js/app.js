@@ -7,12 +7,6 @@ const navBarLinks = document.getElementsByClassName("navbar-links")[0];
 // });
 // Si la clase 'active' no esta, la agrega y si esta la quita
 
-// const y = document.getElementsByClassName("navbar-links");
-// const z = document.getElementsByClassName("menu-a");
-// z.addEventListener("click", () => {
-//   y.classList.toggle("active");
-// });
-
 function showHide() {
   let navLinks = document.getElementsByClassName("navbar-links");
   navBarLinks.classList.toggle("active");
