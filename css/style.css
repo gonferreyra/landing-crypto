@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap");
 
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 14px;
     color: white;
     background-color: #f7f7f7;
@@ -106,7 +106,7 @@ body {
     }
 
     .navbar-links a {
-        padding: .5rem 1rem;
+        padding: 0.5rem 1rem;
     }
 
     .navbar-links.active {
@@ -168,120 +168,111 @@ h5 {
 /* ----- section 2 ------ */
 
 .section-2 {
-    background-image: url("../img/background2.jpg");
+    padding: 3.5rem 1.2rem 1rem;
+    background-image: url("../img/background.jpg");
     background-size: cover;
-    background-position: center;
-    width: 100%;
-    padding: 8rem 1rem;
+    background-repeat: no-repeat;
     height: 100vh;
 }
 
-.section-2-content {
-    width: 85%;
-    margin: auto;
-    position: relative;
-    top: 20%;
+.sec-2-header {
+    margin: 1rem 0;
 }
 
-.section-2-content h2,
-p,
-button {
-    text-align: justify;
+.sec-2-header h2 {
+    margin: 15px auto;
+    font-size: 25px;
 }
 
-.section-2-content h2 {
-    line-height: 40px;
-}
-
-.section-2-content p {
-    margin: 20px 0;
-    font-size: 10px;
-}
-
-.section-2-content button {
-    width: 100px;
-    height: 30px;
+.sec-2-cont {
     border-radius: 5px;
-    text-align: center;
-    border: 1px solid #f7f7f7;
-    background-color: orange;
-    margin: 20px 5px;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 1rem;
+    transition: 1s;
+    background-color: rgb(136, 136, 136)
 }
 
-.section-2-content button a {
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    font-size: 12px;
+.form-container:hover {
+    border: 2px solid orange;
     transition: 1s;
 }
 
-.section-2-content a {
-    display: inline-block;
+.login-data-cont input {
+    padding: 10px 5px;
     width: 100%;
-    padding: 7px 0;
-}
-
-.buttons {
-    text-align: center;
-}
-
-.section-2-content button:hover {
-    background-color: #f7f7f7;
-    transition: 0.5s;
-}
-
-.section-2-content a:hover {
-    color: orange;
-    transition: 0.5s;
-}
-
-.contact-form {
-    text-align: center;
-}
-
-.form {
-    margin: 20px auto;
-    padding-top: 10px;
-    background-color: rgb(243, 160, 7);
-    border-radius: 10px;
-    border: 1px solid white;
-    max-width: 334px;
-}
-
-.form-box {
-    margin: 10px auto;
-}
-
-.form-box input {
-    padding: 5px 8px;
     border: none;
     border-radius: 6px;
-    margin: 10px auto;
 }
 
-@media screen and (min-width: 425px) {
-    .section-2-content h2 {
-        text-align: center;
-    }
+.login-email label,
+input {
+    margin: 20px auto;
 }
+
+.login-button {
+    margin: 12px auto;
+}
+
+.login-button button {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid white;
+    background-color: orange;
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    display: inline-block;
+    width: 100%;
+    padding: 7px 0 9px;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.login-button a:hover {
+    background-color: orange;
+    color: white;
+    transition: 1s;
+}
+
+
 
 @media screen and (min-width: 768px) {
-
-    .section-2-content h2 {
-        font-size: 30px;
-        text-align: center;
+    .section-2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    .section-2-content p {
-        font-size: 15px;
-        text-align: center;
+    .sec-2-header {
+        margin: 2rem 0;
+        display: flex;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .section-2-content h2 {
+    .sec-2-header h2 {
+        text-align: center;
         font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .section-2 {
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .sec-2-cont {
+        width: 450px;
     }
 }
 
@@ -289,17 +280,18 @@ button {
 
 .section-3 {
     background-color: #f7f7f7;
-
+    max-width: 1200px;
+    margin: auto;
     color: black;
     text-align: center;
-    padding: 2.5rem 2rem
+    padding: 2.5rem 2rem;
 }
 
 .icon-container {
     width: 100%;
     margin: 30px auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -317,9 +309,13 @@ button {
     margin-top: 15px;
 }
 
-.icon-container p {
+.p-heading {
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.p-p {
     font-size: 12px;
-    text-align: center;
 }
 
 .icon p {
@@ -407,6 +403,30 @@ button {
     }
 }
 
+@media screen and (min-width: 1024px) {
+    .section-3 {
+        margin: 4rem auto;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+
+    .security-container,
+    .mobile-container,
+    .wallet-container,
+    .exchange-container {
+        margin: 0;
+    }
+
+    .insurance-container {
+        margin: -30px;
+    }
+
+    .recurring-container {
+        margin: 30px;
+    }
+}
+
 @media screen and (max-width: 425px) {
     .icon-big img {
         width: 150px;
@@ -418,6 +438,11 @@ button {
 .section-5 {
     padding: 80px 15px 30px;
     color: black;
+}
+
+.price-container {
+    max-width: 1200px;
+    margin: auto;
 }
 
 .cards {
@@ -434,7 +459,6 @@ button {
     border: 1px solid orange;
     transition: 0.5s;
 }
-
 
 .price-heading {
     margin-bottom: 50px;
@@ -453,12 +477,12 @@ button {
 }
 
 .data ul li:before {
-    content: '✓';
+    content: "✓";
     padding: 0 10px;
 }
 
 .premium ul li:before {
-    content: 'X';
+    content: "X";
     padding: 0 10px;
 }
 
@@ -469,7 +493,7 @@ button {
 
 .data ul li {
     text-align: justify;
-    padding: 0 30px;
+    /* padding: 0 20px; */
 }
 
 .price-content a {
@@ -491,6 +515,8 @@ button {
 
 .price-header {
     border-bottom: 1px solid rgba(190, 190, 190, 0.671);
+    text-align: left;
+    padding: 0 0 0 10px;
 }
 
 .price-header h3 {
@@ -499,7 +525,7 @@ button {
 }
 
 .price-cost p {
-    text-align: center;
+    /* text-align: center; */
     font-size: 18px;
     font-weight: 600;
 }
@@ -541,6 +567,17 @@ button {
     }
 }
 
+@media screen and (min-width: 768px) {
+    .data ul li {
+        padding: 0 20px;
+    }
+
+    .price-header {
+        text-align: center;
+        padding: 0;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .data ul li {
         line-height: 30px;
@@ -558,6 +595,7 @@ button {
 .section-4 {
     padding: 3.5rem 1.2rem 1rem;
     background-color: #bc6c25;
+    height: 100vh;
 }
 
 .form-container {
@@ -633,10 +671,16 @@ input {
 }
 
 @media screen and (min-width: 768px) {
+    .section-4 {
+        padding: 0;
+        display: flex;
+    }
+
     .sec-4-cont {
-        width: 350px;
+        /* width: 380px; */
         margin: auto;
     }
+
 }
 
 /* ----- Footer ----- */
@@ -645,9 +689,14 @@ footer {
     color: white;
     background-color: black;
     padding: 1rem 1.2rem;
-    background-image: url('../img/bg-footer.jpg');
+    background-image: url("../img/bg-footer.jpg");
     background-size: cover;
     background-position: center;
+}
+
+.footer-main {
+    max-width: 1200px;
+    margin: auto;
 }
 
 .ftr-container {
@@ -684,7 +733,7 @@ h3 {
 }
 
 .ftr-newsletter button {
-    width: 101px;
+    width: 100%;
     height: 37px;
     border-radius: 5px;
     border: none;
@@ -700,6 +749,7 @@ h3 {
     font-size: 12px;
     padding: 10px 35px;
     border-radius: 5px;
+    width: 100%;
 }
 
 .ftr-newsletter button:hover {
@@ -723,7 +773,7 @@ h3 {
     width: 40px;
     text-align: center;
     line-height: 40px;
-    margin-right: .2rem;
+    margin-right: 0.2rem;
     border-radius: 50%;
     transition: 0.5s;
 }
@@ -763,88 +813,169 @@ h3 {
     }
 
     .ftr-contact-social ul li {
-        margin-right: .8rem;
+        margin-right: 0.8rem;
     }
 }
 
 /* ----- Section Images ----- */
 
-.section-img {
+.image-section {
     color: black;
-    text-align: center;
-    background-color: white;
-    /* margin: 1rem; */
-    padding: 3rem 0;
-    width: 100%;
+    margin: 3rem 0;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.img-container {
+.img-cards-main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    /* flex: 1 1 0px; */
+    padding: 0 1rem;
     flex-wrap: wrap;
-}
-
-.section-img-heading {
-    margin: 1rem auto;
+    row-gap: 2rem;
 }
 
 .img-cards {
-    max-width: 330px;
-    padding: 2rem 0;
-    margin: 2rem;
-    flex: 0.2 1 0px;
+    border: 1px solid lightgray;
 }
 
-.img-cards img {
-    width: 100%;
-    /* height: 100%; */
-}
-
-.img-1 {
-    padding: 1rem 0;
-    height: 100%;
-    width: 100%;
-}
-
-
-.img-cards p {
+.card-cont-2 {
     text-align: center;
-    margin: 0;
-    color: #000000;
+    padding: 1rem 2rem;
+}
+
+.img-img img {
+    width: 180px;
+    border-radius: 50%;
+}
+
+.img-main-container {
+    width: 1200px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.p-name {
+    font-size: 16px;
     font-weight: 600;
 }
 
-/* @media screen and (min-width: 550px) */
+.image-heading {
+    text-align: center;
+    margin: 1rem auto 3.5rem;
+}
 
-@media screen and (min-width: 732px) {
-    .img-container {
+.img-contact-social ul li {
+    display: inline-block;
+    border: 1px solid lightgrey;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 0.2rem;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.img-contact-social ul li:hover {
+    border: 1px solid black;
+    background-color: black;
+}
+
+@media screen and (min-width: 768px) {
+    .img-cards-main {
         flex-direction: row;
-        align-items: stretch;
-        /* width: calc(100% / 3); */
+        justify-content: space-evenly;
+        column-gap: 1rem;
     }
 
-    .img-cards {
-        width: calc(100% / 3);
-    }
-
-    .img-cards img {
-        max-height: 140px;
-        /* min-width: 240px; */
-        max-width: 549px;
-    }
-
-    .section-img {
-        padding: 5rem 0;
+    .card-cont-2 {
+        padding: 1rem 2rem;
     }
 }
 
-@media screen and (min-width: 732px) {
-    .img-cards img {
-        min-width: 240px;
+@media screen and (min-width: 1024px) {
+    .img-cards {
+        padding: 2rem 2rem;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .img-cards {
+        padding: 2rem 3rem;
+    }
+}
+
+/* ----- Media query heading sizes ----- */
+
+@media screen and (max-width: 426px) {
+    .section-1-content h1 {
+        font-size: 30px;
     }
 
+    .section-1-content h5 {
+        font-size: 15px;
+    }
+
+    .section-5 h2,
+    .image-section h2,
+    .section-3 h2,
+    .section-4 h2 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 427px) {
+    .section-1-content h1 {
+        font-size: 40px;
+    }
+
+    .section-1-content h5 {
+        font-size: 18px;
+    }
+
+    .section-5 h2,
+    .image-section h2,
+    .section-3 h2,
+    .section-4 h2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .section-1-content h1 {
+        font-size: 54px;
+    }
+
+    .section-1-content h5 {
+        font-size: 24px;
+    }
+
+    .section-5 h2,
+    .image-section h2,
+    .section-3 h2,
+    .section-4 h2 {
+        font-size: 40px;
+    }
+
+    .p-heading {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .section-1-content h1 {
+        font-size: 80px;
+    }
+
+    .section-1-content h5 {
+        font-size: 35px;
+    }
+
+    .section-5 h2,
+    .image-section h2,
+    .section-3 h2,
+    .section-4 h2 {
+        font-size: 55px;
+    }
 }
