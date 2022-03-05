@@ -231,14 +231,18 @@ input {
     font-size: 13px;
     display: inline-block;
     width: 100%;
-    padding: 7px 0 9px;
+    padding: 6px 0;
     border-radius: 5px;
     transition: 1s;
 }
 
+.login-button button:hover {
+    background-color: black;
+    transition: 1s;
+}
+
 .login-button a:hover {
-    background-color: orange;
-    color: white;
+    color: orange;
     transition: 1s;
 }
 
