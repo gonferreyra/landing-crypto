@@ -26,7 +26,7 @@ body {
     background-color: white;
     /* width: 100vw; */
     position: sticky;
-    top: 0;
+    top: -1;
     z-index: 1;
 }
 
@@ -823,7 +823,7 @@ h3 {
     color: black;
     margin: 3rem 0;
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto 1.5rem;
 }
 
 .img-cards-main {
@@ -898,11 +898,19 @@ h3 {
     .img-cards {
         padding: 2rem 2rem;
     }
+
+    .image-section {
+        margin: 0 auto 2.5rem;
+    }
 }
 
 @media screen and (min-width: 2000px) {
     .img-cards {
         padding: 2rem 3rem;
+    }
+
+    .image-section {
+        margin: 0 auto 3.5rem;
     }
 }
 
